@@ -5,11 +5,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="./assets/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./assets/favicon/favicon-16x16.png" sizes="16x16" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
+    <title>Luka Hartwig | Software Developer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        html,
+        body {
+            min-height: 100vh;
+            background-color: #191E27;
+            color: #E7E7E7;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .introduction {
+            max-width: 65em;
+            padding-top: 10em;
+            padding-left: 10em;
+            padding-right: 10em;
+        }
+
+        .introduction__greeting {
+            margin-bottom: 2em;
+            font-size: 2.25em;
+            font-weight: 300;
+        }
+
+        .introduction__text {
+            margin-bottom: 1em;
+            font-size: 2.25em;
+            font-weight: 300;
+        }
+
+        .introduction__text b {
+            font-weight: 700;
+        }
+
+        .social-links {
+            height: 4em;
+        }
+
+        .social-links__item {
+            width: 4em;
+            height: 4em;
+            display: inline-block;
+            transition: transform .1s ease-out;
+        }
+
+        .social-links__item:hover {
+            transform: scale(1.1);
+        }
+
+        .social-links__item:not(:last-child) {
+            margin-right: 1.5em;
+        }
+
+        @media (max-width: 45em) {
+            .introduction {
+                padding-top: 1em;
+                padding-left: 1em;
+                padding-right: 1em;
+            }
+
+            .introduction__greeting {
+                margin-bottom: 1em;
+                font-size: 1.5em;
+            }
+
+            .introduction__text {
+                font-size: 1.5em;
+            }
+
+            .social-links {
+                height: 3em;
+                text-align: center;
+            }
+
+            .social-links__item {
+                width: 3em;
+                height: 3em;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <h1>It twerks!</h1>
+    <div class="introduction">
+        <h1 class="introduction__greeting">Moin, moin,</h1>
+        <p class="introduction__text">I’m
+            <b>Luka Hartwig</b>, a software developer from Hamburg and I’m interested in cloud-based web applications.</p>
+        <ul class="social-links">
+            <li class="social-links__item">
+                <a href="https://github.com/lukahartwig">
+                    <img src="./assets/icons/github.svg" alt="Github">
+                </a>
+            </li>
+            <li class="social-links__item">
+                <a href="https://www.linkedin.com/in/luka-hartwig-230048141/">
+                    <img src="./assets/icons/linkedin.svg" alt="LinkedIn">
+                </a>
+            </li>
+            <li class="social-links__item">
+                <a href="https://twitter.com/lukahartwig">
+                    <img src="./assets/icons/twitter.svg" alt="Twitter">
+                </a>
+            </li>
+            <li class="social-links__item">
+                <a href="https://www.youtube.com/user/avott42">
+                    <img src="./assets/icons/youtube.svg" alt="YouTube">
+                </a>
+            </li>
+        </ul>
+    </div>
 </body>
 
 </html>
