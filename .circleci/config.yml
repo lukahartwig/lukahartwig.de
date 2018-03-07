@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run:
           name: Deploy to S3 if tests pass and branch is Master
-          command: aws s3 sync . s3://lukahartwig.de --delete --exclude '.circleci/*' --exclude '.git/*'
+          command: aws s3 sync . s3://lukahartwig.de --delete --exclude '.circleci/*' --exclude '.git/*' --exclude '*.md'
 
 workflows:
   version: 2
