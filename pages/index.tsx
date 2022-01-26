@@ -86,7 +86,7 @@ export default function HomePage() {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <small className="text-base text-rose-300">
+              <small className="text-base text-rose-200">
                 Web Development / Site Reliability Engineering / Observability /
                 Data
               </small>
@@ -105,8 +105,13 @@ export default function HomePage() {
           <ul className="flex space-x-6">
             {SOCIALS.map(({ name, icon: Icon, href }) => (
               <li key={name}>
-                <a href={href} rel="noreferrer" target="_blank">
-                  <Icon className="text-rose-200" />
+                <a href={href} rel="noreferrer" target="_blank" title={name}>
+                  <Icon
+                    className="text-rose-200"
+                    aria-hidden
+                    focusable={false}
+                  />
+                  <span className="sr-only">{name}</span>
                 </a>
               </li>
             ))}
