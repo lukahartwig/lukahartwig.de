@@ -37,7 +37,7 @@ export default function HomePage() {
   return (
     <>
       <Head>
-        <title>Lukas Hartwig</title>
+        <title>Luka Hartwig</title>
       </Head>
 
       <Transition className="h-full" appear show>
