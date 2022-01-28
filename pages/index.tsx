@@ -73,7 +73,7 @@ export default function HomePage() {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <h1 className="mb-4 text-3xl font-light leading-relaxed text-rose-300 md:mb-8 md:text-6xl">
+              <h1 className="mb-2 text-3xl font-light leading-relaxed text-rose-300 lg:mb-4 lg:text-6xl">
                 Hello, I&apos;m{" "}
                 <span className="font-bold text-rose-200">Luka Hartwig</span>
               </h1>
@@ -86,10 +86,10 @@ export default function HomePage() {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <small className="text-base text-rose-200">
+              <sub className="hidden text-base sm:block">
                 Web Development / Site Reliability Engineering / Observability /
                 Data
-              </small>
+              </sub>
             </Transition.Child>
           </div>
         </div>
