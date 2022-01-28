@@ -107,7 +107,7 @@ export default function HomePage() {
               <li key={name}>
                 <a href={href} rel="noreferrer" target="_blank" title={name}>
                   <Icon
-                    className="text-rose-200"
+                    className="text-rose-300"
                     aria-hidden
                     focusable={false}
                   />
