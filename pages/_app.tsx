@@ -7,7 +7,11 @@ import Layout from "../components/Layout";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <PlausibleProvider domain="lukahartwig.de">
+    <PlausibleProvider
+      domain="lukahartwig.de"
+      trackLocalhost={false}
+      trackOutboundLinks
+    >
       <Layout>
         <Component {...pageProps} />
       </Layout>
