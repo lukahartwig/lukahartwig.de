@@ -9,7 +9,7 @@ export default function Document() {
           content="Hi, I'm Luka Hartwig. I'm a software developer with a passion for cloud based web applications."
         />
       </Head>
-      <body className="text-rose-200">
+      <body className="text-white">
         <Main />
         <NextScript />
       </body>
