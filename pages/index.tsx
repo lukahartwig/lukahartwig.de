@@ -44,15 +44,15 @@ export default function HomePage() {
       </Head>
 
       <div className="flex flex-col items-center">
-        <div className="my-8 text-center md:px-32">
-          <h1 className="mb-2 text-4xl font-extrabold leading-relaxed sm:text-6xl md:text-8xl lg:mb-8">
+        <div className="my-4 md:my-8 text-center md:px-32">
+          <h1 className="text-4xl font-extrabold leading-relaxed md:text-6xl lg:text-8xl md:mb-8">
             Hello, I&apos;m
             <br />
             <span className="bg-gradient-to-r from-sky-400 to-rose-400 bg-clip-text text-transparent">
               Luka&nbsp;Hartwig
             </span>
           </h1>
-          <sub className="hidden text-base text-gray-400 sm:block">
+          <sub className="hidden text-base text-gray-400 md:block">
             {TAGS.join(" / ")}
           </sub>
         </div>
