@@ -6,10 +6,8 @@ interface Props {
 
 export default function Layout({ children }: Props) {
   return (
-    <>
-      <div className="h-screen bg-black">
-        <div className="container mx-auto h-full">{children}</div>
-      </div>
-    </>
+    <div className="h-screen bg-black">
+      <div className="container mx-auto h-full">{children}</div>
+    </div>
   );
 }
