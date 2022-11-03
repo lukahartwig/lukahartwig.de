@@ -14,7 +14,7 @@ const SOCIALS = [
   },
   {
     name: "Youtube",
-    href: "https://www.youtube.com/channel/UCBfOLc7N_IwPkYWBTmJqokQ",
+    href: "https://www.youtube.com/@lukahartwig",
     icon: Youtube,
   },
   {
