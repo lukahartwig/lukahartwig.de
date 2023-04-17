@@ -2,19 +2,23 @@ import "@/styles/globals.css";
 
 import { type AppProps } from "next/app";
 import PlausibleProvider from "next-plausible";
+import { Analytics } from "@vercel/analytics/react";
 
 import { Layout } from "@/components/Layout";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <PlausibleProvider
-      domain="lukahartwig.de"
-      trackLocalhost={false}
-      trackOutboundLinks
-    >
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </PlausibleProvider>
+    <>
+      <PlausibleProvider
+        domain="lukahartwig.de"
+        trackLocalhost={false}
+        trackOutboundLinks
+      >
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </PlausibleProvider>
+      <Analytics />
+    </>
   );
 }
