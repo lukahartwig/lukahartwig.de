@@ -1,6 +1,6 @@
 // @ts-check
 
-const { withPlausibleProxy } = require("next-plausible");
+import { withPlausibleProxy } from "next-plausible";
 
 /**
  * @type {import('next').NextConfig}
@@ -15,4 +15,4 @@ const nextConfig = {
   reactStrictMode: true,
 };
 
-module.exports = withPlausibleProxy()(nextConfig);
+export default withPlausibleProxy()(nextConfig);

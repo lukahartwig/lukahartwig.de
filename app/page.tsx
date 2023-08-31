@@ -1,16 +1,10 @@
-import Head from "next/head";
-import { GitHub, Gitlab, Linkedin, Twitter, Youtube } from "react-feather";
+import { GitHub, Linkedin, Twitter, Youtube } from "react-feather";
 
 const SOCIALS = [
   {
     name: "GitHub",
     href: "https://github.com/lukahartwig",
     icon: GitHub,
-  },
-  {
-    name: "GitLab",
-    href: "https://gitlab.com/lukahartwig",
-    icon: Gitlab,
   },
   {
     name: "Youtube",
@@ -39,10 +33,6 @@ const TAGS = [
 export default function HomePage() {
   return (
     <div className="flex h-full items-center justify-center">
-      <Head>
-        <title>Luka Hartwig</title>
-      </Head>
-
       <div className="flex flex-col items-center">
         <div className="my-4 md:my-8 text-center md:px-32">
           <h1 className="text-4xl font-extrabold leading-relaxed md:text-6xl lg:text-8xl md:mb-8">
