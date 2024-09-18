@@ -33,7 +33,7 @@ const TAGS = [
 export default function HomePage() {
 	return (
 		<div className="flex h-full items-center justify-center">
-			<div className="flex flex-col items-center">
+			<main className="flex flex-col items-center">
 				<div className="my-4 md:my-8 text-center md:px-32">
 					<h1 className="text-4xl font-extrabold leading-relaxed md:text-6xl lg:text-8xl md:mb-8">
 						Hello, I&apos;m
@@ -60,7 +60,7 @@ export default function HomePage() {
 						</li>
 					))}
 				</ul>
-			</div>
+			</main>
 		</div>
 	);
 }
