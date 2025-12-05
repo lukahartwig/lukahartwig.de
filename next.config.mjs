@@ -4,11 +4,8 @@
  * @type {import('next').NextConfig}
  **/
 const nextConfig = {
-	experimental: {
-		reactCompiler: true,
-		ppr: true,
-	},
-	poweredByHeader: false,
+	cacheComponents: true,
+	reactCompiler: true,
 	reactStrictMode: true,
 };
 
